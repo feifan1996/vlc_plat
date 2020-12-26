@@ -1,0 +1,32 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/eda/feifan/vlc_plat/PAM/Receiver/synchronization/senter_syn/sim/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpQrJ4uu
+synUtils::sendTool -active {_icl_start_rpc -version "O-2018.09-SP2_Full64" -sync_file /tmp/vcs_dve_rpc.eda.3147}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.eda.3147}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {tb_senter_syn.uut_senter_syn.uut_syn.AD_CVER_WIDTH tb_senter_syn.uut_senter_syn.uut_syn.IDLE tb_senter_syn.uut_senter_syn.uut_syn.LENGTH_CNT_SIGNAL tb_senter_syn.uut_senter_syn.uut_syn.LENGTH_DATA tb_senter_syn.uut_senter_syn.uut_syn.LENGTH_SIGNAL tb_senter_syn.uut_senter_syn.uut_syn.LENTGRH_M_SEQ tb_senter_syn.uut_senter_syn.uut_syn.MEM_ADDR_WIDTH tb_senter_syn.uut_senter_syn.uut_syn.PAM_ORDER tb_senter_syn.uut_senter_syn.uut_syn.S0 tb_senter_syn.uut_senter_syn.uut_syn.S1 tb_senter_syn.uut_senter_syn.uut_syn.THRESHOLD tb_senter_syn.uut_senter_syn.uut_syn.WIDTH_RESULT tb_senter_syn.uut_senter_syn.uut_syn.ad_rec_data tb_senter_syn.uut_senter_syn.uut_syn.ad_rec_data_r tb_senter_syn.uut_senter_syn.uut_syn.ad_rec_data_rr tb_senter_syn.uut_senter_syn.uut_syn.arst_n tb_senter_syn.uut_senter_syn.uut_syn.clk tb_senter_syn.uut_senter_syn.uut_syn.cnt_signal tb_senter_syn.uut_senter_syn.uut_syn.m_seq_local tb_senter_syn.uut_senter_syn.uut_syn.num_xor_rec_loc tb_senter_syn.uut_senter_syn.uut_syn.rec_cur_state tb_senter_syn.uut_senter_syn.uut_syn.rec_flag_IDLE_over tb_senter_syn.uut_senter_syn.uut_syn.rec_flag_S0_over tb_senter_syn.uut_senter_syn.uut_syn.rec_flag_S1_over tb_senter_syn.uut_senter_syn.uut_syn.rec_nxt_state tb_senter_syn.uut_senter_syn.uut_syn.rec_seq tb_senter_syn.uut_senter_syn.uut_syn.result_cov tb_senter_syn.uut_senter_syn.uut_syn.syn_demodu_data tb_senter_syn.uut_senter_syn.uut_syn.syn_demodu_ready tb_senter_syn.uut_senter_syn.uut_syn.syn_demodu_valid tb_senter_syn.uut_senter_syn.uut_syn.syn_demodu_valid_r tb_senter_syn.uut_senter_syn.uut_syn.xor_local_rec } -aggregates  -fid VPD0
+synopsys::run -relative 1000000.000000ps
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

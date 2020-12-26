@@ -1,0 +1,10 @@
+=======================DVE Context and Call Stack=========================
+Command line: /home/eda/synopsys/vcs_2018/gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 4731" -toolin /tmp/vcs_20201217075912_4730_eda..stdin -toolout /tmp/vcs_20201217075912_4730_eda..stdout
+
+--- Stack trace follows:
+
+Received Signal 1 from: PID=4309 (UID=1000)
+
+
+Process terminated by hangup.
+

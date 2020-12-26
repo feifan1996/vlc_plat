@@ -1,0 +1,49 @@
+08:43:23    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe ./simv -pid 3147 -toolin /tmp/vcs_20201219004257_3146_eda..stdin -toolout /tmp/vcs_20201219004257_3146_eda..stdout  
+08:43:23    17 -->                                                                 [tcl] set ucliGUI::state
+08:43:23    18 -->                                                                     [tcl] gui_update_simulator_buttons
+08:43:26    19 -->                                                                         [tcl] set ucliGUI::state
+08:43:26    20 -->                                                                             [tcl] ucliCore::getToolPID
+08:43:26    21 -->                                                                                 [tcl] synopsys::env hasTB
+08:43:26    22 -->                                                                                     [tcl] trigger_hier_stack_context_switch 0
+08:43:26    23 -->                                                                                         [tcl] synUtils::setDVEInitPhase 1
+08:43:26    24 -->                                                                                             [tcl] gui_get_env SIMSETUP::SIMVPD
+08:43:26    25 --> ...  [tcl] synopsys::dump -type VPD -file /home/eda/feifan/vlc_plat/PAM/Receiver/synchronization/senter_syn/sim/inter.vpd -locking
+08:43:27    26 --> ...      [tcl] gui_update_simulator_buttons
+08:43:27    27 --> ...          [tcl] synopsys::dump -autoflush on -fid VPD0
+08:43:27    28 --> ...              [tcl] set ::dve_fid VPD0
+08:43:27    29 --> ...                  [tcl] synUtils::setDVEInitPhase 0
+08:43:27    30 --> ...                      [tcl] ucliCore::getToolPID
+08:43:27    31 --> ...                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpQrJ4uu
+08:43:27    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "O-2018.09-SP2_Full64" -sync_file /tmp/vcs_dve_rpc.eda.3147}
+08:43:27    33 --> ...                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.eda.3147}
+08:43:27    34 --> ...                                      [tcl] dveMisc::vbusExpand tb_senter_syn
+08:43:27    35 --> ...                                          [tcl] config endofsim noexit
+08:43:27    36 --> ...                                              [tcl] config onfail enable all
+08:43:27    37 --> ...                                                  [tcl] config syscaddplainmembers
+08:43:27    38 --> ...                                                      [tcl] config syscaddsourcenames
+08:43:27    39 --> ...                                                          [tcl] config syscaddstructtypes
+08:43:27    40 --> ...                                                              [tcl] synopsys::listing -disable
+08:43:32    41 --> ...                                                                  [tcl] dveMisc::vbusExpand tb_senter_syn.uut_senter_syn
+08:43:33    42 --> ...                                                                      [tcl] dveMisc::vbusExpand tb_senter_syn.uut_senter_syn.uut_syn
+08:43:37    43 --> ...                                                                          [tcl] synopsys::dump -add {tb_senter_syn.uut_senter_syn.uut_syn.AD_CVER_WIDTH tb_senter_syn.uut_senter_syn.uut_syn.IDLE tb_senter_syn.uut_senter_syn.uut_syn.LENGTH_CNT_SIGNAL tb_senter_syn.uut_senter_syn.uut_syn.LENGTH_DATA tb_senter_syn.uut_senter_syn.uut_syn.LENGTH_SIGNAL tb_senter_syn.uut_senter_syn.uut_syn.LENTGRH_M_SEQ tb_senter_syn.uut_senter_syn.uut_syn.MEM_ADDR_WIDTH tb_senter_syn.uut_senter_syn.uut_syn.PAM_ORDER tb_senter_syn.uut_senter_syn.uut_syn.S0 tb_senter_syn.uut_senter_syn.uut_syn.S1 tb_senter_syn.uut_senter_syn.uut_syn.THRESHOLD tb_senter_syn.uut_senter_syn.uut_syn.WIDTH_RESULT tb_senter_syn.uut_senter_syn.uut_syn.ad_rec_data tb_senter_syn.uut_senter_syn.uut_syn.ad_rec_data_r tb_senter_syn.uut_senter_syn.uut_syn.ad_rec_data_rr tb_senter_syn.uut_senter_syn.uut_syn.arst_n tb_senter_syn.uut_senter_syn.uut_syn.clk tb_senter_syn.uut_senter_syn.uut_syn.cnt_signal tb_senter_syn.uut_senter_syn.uut_syn.m_seq_local tb_senter_syn.uut_senter_syn.uut_syn.num_xor_rec_loc tb_senter_syn.uut_senter_syn.uut_syn.rec_cur_state tb_senter_syn.uut_senter_syn.uut_syn.rec_flag_IDLE_over tb_senter_syn.uut_senter_syn.uut_syn.rec_flag_S0_over tb_senter_syn.uut_senter_syn.uut_syn.rec_flag_S1_over tb_senter_syn.uut_senter_syn.uut_syn.rec_nxt_state tb_senter_syn.uut_senter_syn.uut_syn.rec_seq tb_senter_syn.uut_senter_syn.uut_syn.result_cov tb_senter_syn.uut_senter_syn.uut_syn.syn_demodu_data tb_senter_syn.uut_senter_syn.uut_syn.syn_demodu_ready tb_senter_syn.uut_senter_syn.uut_syn.syn_demodu_valid tb_senter_syn.uut_senter_syn.uut_syn.syn_demodu_valid_r tb_senter_syn.uut_senter_syn.uut_syn.xor_local_rec } -aggregates  -fid VPD0
+08:43:42    44 --> ...                                                                              [tcl] synopsys::run -relative 1000000.000000ps
+08:43:42    45 --> ...                                                                                  [tcl] set ucliGUI::state
+08:43:42    46 --> ...                                                                                      [tcl] gui_update_simulator_buttons
+08:43:42    47 --> ...                                                                                          [tcl] set ucliGUI::state
+08:43:42    48 --> ...                                                                                              [tcl] set ucliGUI::state
+08:43:42    49 --> ...                                                                                                  [tcl] set ucliGUI::state
+08:43:42    50 --> ...  [tcl] set ucliGUI::state
+08:43:42    51 --> ...      [tcl] catch {senv activeDomain} dveMisc::result 
+08:43:42    52 --> ...          [tcl] set dveMisc::result
+08:43:42    53 --> ...              [tcl] gui_update_simulator_buttons
+08:45:52    54 --> ...                  [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+08:45:52    55 --> ...                      [tcl] synopsys::finish
+08:45:52    56 --> ...                          [tcl] set ucliGUI::state
+08:45:52    57 --> ...                              [tcl] gui_update_simulator_buttons
+08:45:52    58 --> ...                                  [tcl] set ucliGUI::state
+08:45:52    59 --> ...                                      [tcl] catch {senv activeDomain} dveMisc::result 
+08:45:52    60 --> ...                                          [tcl] set dveMisc::result
+08:45:52    61 --> ...                                              [tcl] gui_update_simulator_buttons
+08:45:52    62 --> ...                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+08:45:52    63 --> ...                                                      [tcl] set dveMisc::result
+08:45:52    64 --> ...                                                          [tcl] ucli_exit

@@ -1,0 +1,6 @@
+/home/eda/feifan/vlc_plat/PAM/Receiver/synchronization/senter_syn/rtl/add_head_frame.v
+/home/eda/feifan/vlc_plat/PAM/Receiver/synchronization/senter_syn/rtl/pam_map.v
+/home/eda/feifan/vlc_plat/PAM/Receiver/synchronization/senter_syn/rtl/senter.v
+/home/eda/feifan/vlc_plat/PAM/Receiver/synchronization/senter_syn/rtl/senter_syn.v
+/home/eda/feifan/vlc_plat/PAM/Receiver/synchronization/senter_syn/rtl/syn.v
+/home/eda/feifan/vlc_plat/PAM/Receiver/synchronization/senter_syn/tb/tb_senter_syn.v

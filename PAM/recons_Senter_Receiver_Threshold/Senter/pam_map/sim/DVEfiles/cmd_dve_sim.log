@@ -1,0 +1,33 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/eda/feifan/vlc_plat/PAM/recons_Senter_Receiver/Senter/pam_map/sim/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnppwMMDO
+synUtils::sendTool -active {_icl_start_rpc -version "O-2018.09-SP2_Full64" -sync_file /tmp/vcs_dve_rpc.eda.17748}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.eda.17748}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {tb_pam_map.uut_pam_map} -scope "." -depth 1 -fid VPD0
+synopsys::dump -add {tb_pam_map.uut_pam_map.mem } -aggregates  -fid VPD0
+synopsys::run -relative 1000000.000000ps
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

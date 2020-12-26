@@ -1,0 +1,102 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/eda/feifan/vlc_plat/PAM/Senter/sim/DVEfiles/dve_checkpoint_20354_2.tcl} {gui_load_session -ignore_errors -file /home/eda/feifan/vlc_plat/PAM/Senter/sim/DVEfiles/dve_checkpoint_20354_1.tcl} {gui_load_session -ignore_errors -file /home/eda/feifan/vlc_plat/PAM/Senter/Bit_Align/sim/DVEfiles/dve_checkpoint_29842_1.tcl}}
+gui_set_state_value -category Layout -key child_assertion_size_x -value 1916
+gui_set_state_value -category Layout -key child_assertion_size_y -value 149
+gui_set_state_value -category Layout -key child_console_size_x -value 1381
+gui_set_state_value -category Layout -key child_console_size_y -value 151
+gui_set_state_value -category Layout -key child_data_coltype -value 56
+gui_set_state_value -category Layout -key child_data_colvalue -value 13
+gui_set_state_value -category Layout -key child_data_colvariable -value 314
+gui_set_state_value -category Layout -key child_data_size_x -value 221
+gui_set_state_value -category Layout -key child_data_size_y -value 460
+gui_set_state_value -category Layout -key child_driver_size_x -value 1481
+gui_set_state_value -category Layout -key child_driver_size_y -value 244
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 491
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 111
+gui_set_state_value -category Layout -key child_hier_size_x -value 439
+gui_set_state_value -category Layout -key child_hier_size_y -value 460
+gui_set_state_value -category Layout -key child_hier_sort_order -value 1
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_showstate -value normal
+gui_set_state_value -category Layout -key child_source_size_x -value 201
+gui_set_state_value -category Layout -key child_source_size_y -value 364
+gui_set_state_value -category Layout -key child_wave_colname -value 220
+gui_set_state_value -category Layout -key child_wave_colvalue -value 220
+gui_set_state_value -category Layout -key child_wave_left -value 445
+gui_set_state_value -category Layout -key child_wave_right -value 1086
+gui_set_state_value -category Layout -key main_pos_x -value 98
+gui_set_state_value -category Layout -key main_pos_y -value 163
+gui_set_state_value -category Layout -key main_size_x -value 1479
+gui_set_state_value -category Layout -key main_size_y -value 881
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1541
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 635
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 148
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 129
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1684
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 876
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key TopLevel.2|EkTopVbox|wndWorkspace|qt_workspacechild2|Wave.1|left|filterVBox|controlHBox|unnamed -value_type string -value {*add_raddr *ram_raddr {*mst_exec_state == INIT_READ}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|BuildTab|m_rebuildBtnGroup|m_customCmdCombo} -value_type string -value {{-sverilog} sverilog}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-nc -licqueue -a simulate.log -do tb_top_dma_simulate.do} {-ucligui -nc -licqueue -l simulate.log -do tb_top_dma_simulate.do} {-nc -licqueue -a simulate.log -do tb_top_avalon_simulate.do}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/eda/feifan/vlc_plat/PAM/Senter_Receiver/sim /home/eda/feifan/vlc_plat/PAM/Senter/sim /home/eda/feifan/vlc_plat/PAM/Receiver/synchronization/senter_syn/sim /home/eda/feifan/vlc_plat/PAM/Senter/Bit_Align/sim /home/eda/vivado_prj/axi_dma_trans/axi_dma_ram.sim/sim_1/behav/vcs}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {./simv ./tb_top_dma_simv /home/eda/vivado_prj/axi_dma_trans/axi_dma_ram.sim/sim_1/behav/vcs/tb_top_dma_simv ./tb_top_avalon_simv}
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
+gui_list_expand -id  Hier.1   tb_senter_receiver
+gui_list_expand -id  Hier.1   tb_senter_receiver.uut_receiver
+gui_list_select -id Hier.1 -current_item_name tb_senter_receiver.uut_receiver.uut_demodulation -current_item_type Scope  -selected  { tb_senter_receiver.uut_receiver.uut_demodulation   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Hier.1 { tb_senter_receiver.uut_receiver.uut_demodulation } -insertionbar
+gui_sim_continue 1000000 
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 155000
+gui_wv_zoom_timerange -id  Wave.1 169014 226291
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_list_select -id Wave.1 -selected  { {tb_senter_receiver.uut_receiver.uut_demodulation.m_axi_tdata[31:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_senter_receiver.uut_receiver.uut_demodulation.pam_data_7[3:0]} {{tb_senter_receiver.uut_receiver.uut_demodulation.m_axi_tdata[31:0]}} 
+gui_marker_move -id  Wave.1 C1 167000
+gui_marker_move -id  Wave.1 C1 167000
+gui_marker_move -id  Wave.1 C1 185000
+gui_marker_move -id  Wave.1 C1 167000
+gui_list_select -id Wave.1 -selected  { {tb_senter_receiver.uut_receiver.uut_demodulation.addr_pilot_w[3:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_senter_receiver.uut_receiver.uut_demodulation.test_data[3:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_senter_receiver.uut_receiver.uut_demodulation.addr_pilot[3:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_senter_receiver.uut_receiver.uut_demodulation.m_axi_tvalid_r   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_senter_receiver.uut_receiver.uut_demodulation.cmp_result_15 {{tb_senter_receiver.uut_receiver.uut_demodulation.m_axi_tvalid_r}} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_senter_receiver.uut_receiver.uut_demodulation.pam_data_7[3:0]} {{tb_senter_receiver.uut_receiver.uut_demodulation.m_axi_tvalid_r}} 
+gui_wv_zoom_timerange -id  Wave.1 165644 173604
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_wv_zoom_timerange -id  Wave.1 184164 187871
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_wv_zoom_timerange -id  Wave.1 214914 220259
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_close_window -window TopLevel.2

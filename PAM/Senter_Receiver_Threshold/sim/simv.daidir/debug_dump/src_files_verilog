@@ -1,0 +1,7 @@
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver/rtl/add_head_frame.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver/rtl/demodulation.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver/rtl/pam_map.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver/rtl/receiver.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver/rtl/senter.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver/rtl/syn.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver/tb/tb_senter_receiver.v

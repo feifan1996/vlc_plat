@@ -1,0 +1,750 @@
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2_Full64; Runtime version O-2018.09-SP2_Full64;  Dec 26 10:06 2020
+----------------------------------------------------------------
+UVM-1.1d
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(62) @ 1100000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+-------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                 
+-------------------------------------------------------------------------------------------
+m_trans                        my_transaction  -     @937                                  
+  data                         da(integral)    3     -                                     
+    [0]                        integral        32    'h56764928                            
+    [1]                        integral        32    'h79dee358                            
+    [2]                        integral        32    'h1fe8b3e5                            
+  keep                         da(integral)    3     -                                     
+    [0]                        integral        4     'he                                   
+    [1]                        integral        4     'he                                   
+    [2]                        integral        4     'hc                                   
+  num_interval_valid           integral        8     'h0                                   
+  num_interval_ready           integral        8     'h0                                   
+  sum_one                      integral        32    'h0                                   
+  begin_time                   time            64    1100000                               
+  depth                        int             32    'd2                                   
+  parent sequence (name)       string          11    my_sequence                           
+  parent sequence (full name)  string          38    uvm_test_top.env.i_agt.sqr.my_sequence
+  sequencer                    string          26    uvm_test_top.env.i_agt.sqr            
+-------------------------------------------------------------------------------------------
+keep_value[          0] = 15
+keep_value[          1] = 14
+keep_value[          2] = 12
+keep_value[          3] =  8
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(95) @ 1100000: uvm_test_top.env.i_agt.drv [my_driver] begin to receive one pkt
+data_size =           0
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(114) @ 1300000: uvm_test_top.env.i_agt.drv [my_driver] end receive one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 1500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 1500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 1500000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 1700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 1700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 1700000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 1900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 1900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(86) @ 1900000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 1900000: uvm_test_top.env.mdl [my_model] get one transaction
+
+=======================================================
+
+Solver failed when solving following set of constraints 
+
+
+integer fv_6 /*this._vcs_unit__2865831673_my_transaction_11_0::cons_calc_sum_1_array(keep)*/ = 53;
+
+constraint axi_cons    // (from this) (constraint_mode = ON) (/home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_transaction.sv:18)
+{
+   (0 == (fv_6 /*this._vcs_unit__2865831673_my_transaction_11_0::cons_calc_sum_1_array(keep)*/ % 2));
+}
+
+=======================================================
+
+Info-[CNST-SATE]  A standalone test-case for this failure has automatically been extracted 
+  from randomize serial 3 partition 25.
+  To reproduce the error using the extracted testcase, please use the 
+  following command:
+  cd 
+  /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/./simv.cst/testcases;
+  vcs -sverilog extracted_r_3_p_25_inconsistent_constraints.sv -R
+  To reproduce the error using the original design and verbose logging, re-run
+  simulation using:
+  simv +ntb_solver_debug=trace +ntb_solver_debug_filter=3
+  To reproduce the error using the original design and debug the error with 
+  Verdi/DVE:
+  1. re-compile the original design with -debug_access+all, if not already 
+  done so
+  	% vcs -debug_access+all <other options>
+  2. re-run the simulation interactively with -gui/-verdi
+  	% simv -gui/-verdi <other options>
+  3. enter the following commands to begin interactive constraint 
+  inconsistency debug within Verdi/DVE
+  	I. set the breakpoint:	verdi/dve> stop -solver -serial 3
+  	II. run the simulation till it stops:	verdi/dve> run
+  	III. step in the constraint solver:	verdi/dve> step -solver
+
+Error-[CNST-ICE] Constraint infeasible constraints error
+/home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_sequence.sv, 16
+  As the solver has encountered a failure due to an infeasible set of 
+  constraints, the values printed during this solve cycle are invalid.
+  The solver will preserve original values.
+
+
+Error-[CNST-CIF] Constraints inconsistency failure
+/home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_sequence.sv, 16
+  Constraints are inconsistent and cannot be solved.
+  Please check the inconsistent constraints being printed above and rewrite 
+  them.
+
+UVM_WARNING /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_sequence.sv(16) @ 1900000: uvm_test_top.env.i_agt.sqr@@my_sequence [RNDFLD] Randomization failed in uvm_do_with action
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(62) @ 1900000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+-------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                 
+-------------------------------------------------------------------------------------------
+m_trans                        my_transaction  -     @949                                  
+  data                         da(integral)    0     -                                     
+  keep                         da(integral)    0     -                                     
+  num_interval_valid           integral        8     'h0                                   
+  num_interval_ready           integral        8     'h0                                   
+  sum_one                      integral        32    'h0                                   
+  begin_time                   time            64    1900000                               
+  depth                        int             32    'd2                                   
+  parent sequence (name)       string          11    my_sequence                           
+  parent sequence (full name)  string          38    uvm_test_top.env.i_agt.sqr.my_sequence
+  sequencer                    string          26    uvm_test_top.env.i_agt.sqr            
+-------------------------------------------------------------------------------------------
+keep_value[          0] = 15
+keep_value[          1] = 14
+keep_value[          2] = 12
+keep_value[          3] =  8
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(95) @ 1900000: uvm_test_top.env.i_agt.drv [my_driver] begin to receive one pkt
+data_size =           0
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(86) @ 2100000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(114) @ 2100000: uvm_test_top.env.i_agt.drv [my_driver] end receive one pkt
+
+=======================================================
+
+Solver failed when solving following set of constraints 
+
+
+integer fv_6 /*this._vcs_unit__2865831673_my_transaction_11_0::cons_calc_sum_1_array(keep)*/ = 51;
+
+constraint axi_cons    // (from this) (constraint_mode = ON) (/home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_transaction.sv:18)
+{
+   (0 == (fv_6 /*this._vcs_unit__2865831673_my_transaction_11_0::cons_calc_sum_1_array(keep)*/ % 2));
+}
+
+=======================================================
+
+Info-[CNST-SATE]  A standalone test-case for this failure has automatically been extracted 
+  from randomize serial 4 partition 24.
+  To reproduce the error using the extracted testcase, please use the 
+  following command:
+  cd 
+  /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/./simv.cst/testcases;
+  vcs -sverilog extracted_r_4_p_24_inconsistent_constraints.sv -R
+  To reproduce the error using the original design and verbose logging, re-run
+  simulation using:
+  simv +ntb_solver_debug=trace +ntb_solver_debug_filter=4
+  To reproduce the error using the original design and debug the error with 
+  Verdi/DVE:
+  1. re-compile the original design with -debug_access+all, if not already 
+  done so
+  	% vcs -debug_access+all <other options>
+  2. re-run the simulation interactively with -gui/-verdi
+  	% simv -gui/-verdi <other options>
+  3. enter the following commands to begin interactive constraint 
+  inconsistency debug within Verdi/DVE
+  	I. set the breakpoint:	verdi/dve> stop -solver -serial 4
+  	II. run the simulation till it stops:	verdi/dve> run
+  	III. step in the constraint solver:	verdi/dve> step -solver
+
+Error-[CNST-ICE] Constraint infeasible constraints error
+/home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_sequence.sv, 16
+  As the solver has encountered a failure due to an infeasible set of 
+  constraints, the values printed during this solve cycle are invalid.
+  The solver will preserve original values.
+
+
+Error-[CNST-CIF] Constraints inconsistency failure
+/home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_sequence.sv, 16
+  Constraints are inconsistent and cannot be solved.
+  Please check the inconsistent constraints being printed above and rewrite 
+  them.
+
+UVM_WARNING /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_sequence.sv(16) @ 2100000: uvm_test_top.env.i_agt.sqr@@my_sequence [RNDFLD] Randomization failed in uvm_do_with action
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(62) @ 2100000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+-------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                 
+-------------------------------------------------------------------------------------------
+m_trans                        my_transaction  -     @953                                  
+  data                         da(integral)    0     -                                     
+  keep                         da(integral)    0     -                                     
+  num_interval_valid           integral        8     'h0                                   
+  num_interval_ready           integral        8     'h0                                   
+  sum_one                      integral        32    'h0                                   
+  begin_time                   time            64    2100000                               
+  depth                        int             32    'd2                                   
+  parent sequence (name)       string          11    my_sequence                           
+  parent sequence (full name)  string          38    uvm_test_top.env.i_agt.sqr.my_sequence
+  sequencer                    string          26    uvm_test_top.env.i_agt.sqr            
+-------------------------------------------------------------------------------------------
+keep_value[          0] = 15
+keep_value[          1] = 14
+keep_value[          2] = 12
+keep_value[          3] =  8
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(95) @ 2100000: uvm_test_top.env.i_agt.drv [my_driver] begin to receive one pkt
+data_size =           0
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(86) @ 2300000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(114) @ 2300000: uvm_test_top.env.i_agt.drv [my_driver] end receive one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(62) @ 2300000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+-------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                 
+-------------------------------------------------------------------------------------------
+m_trans                        my_transaction  -     @957                                  
+  data                         da(integral)    71    -                                     
+    [0]                        integral        32    'hda74ebcb                            
+    [1]                        integral        32    'hc38312f4                            
+    [2]                        integral        32    'h892fefc7                            
+    [3]                        integral        32    'hd0502f9c                            
+    [4]                        integral        32    'he2070853                            
+    ...                        ...             ...   ...                                   
+    [66]                       integral        32    'hf10da42e                            
+    [67]                       integral        32    'he9eea23c                            
+    [68]                       integral        32    'he86e9df1                            
+    [69]                       integral        32    'ha8754745                            
+    [70]                       integral        32    'h7fd8ed34                            
+  keep                         da(integral)    71    -                                     
+    [0]                        integral        4     'h8                                   
+    [1]                        integral        4     'hf                                   
+    [2]                        integral        4     'hc                                   
+    [3]                        integral        4     'h8                                   
+    [4]                        integral        4     'he                                   
+    ...                        ...             ...   ...                                   
+    [66]                       integral        4     'hc                                   
+    [67]                       integral        4     'h8                                   
+    [68]                       integral        4     'hc                                   
+    [69]                       integral        4     'hf                                   
+    [70]                       integral        4     'he                                   
+  num_interval_valid           integral        8     'h0                                   
+  num_interval_ready           integral        8     'h6                                   
+  sum_one                      integral        32    'h0                                   
+  begin_time                   time            64    2300000                               
+  depth                        int             32    'd2                                   
+  parent sequence (name)       string          11    my_sequence                           
+  parent sequence (full name)  string          38    uvm_test_top.env.i_agt.sqr.my_sequence
+  sequencer                    string          26    uvm_test_top.env.i_agt.sqr            
+-------------------------------------------------------------------------------------------
+keep_value[          0] = 15
+keep_value[          1] = 14
+keep_value[          2] = 12
+keep_value[          3] =  8
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(95) @ 2300000: uvm_test_top.env.i_agt.drv [my_driver] begin to receive one pkt
+data_size =           0
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(114) @ 2500000: uvm_test_top.env.i_agt.drv [my_driver] end receive one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 2700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 2700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 2700000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 2900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 2900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 2900000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 3100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 3100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 3100000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 3300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 3300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 3300000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 3500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 3500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 3500000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 3700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 3700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 3700000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 3900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 3900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 3900000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 4100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 4100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 4100000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 4300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 4300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 4300000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 4500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 4500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 4500000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 4700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 4700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 4700000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 4900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 4900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 4900000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 5100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 5100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 5100000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 5300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 5300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 5300000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 5500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 5500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 5500000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 5700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 5700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 5700000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 5900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 5900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 5900000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 6100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 6100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 6100000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 6300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 6300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 6300000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 6500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 6500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 6500000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 6700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 6700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 6700000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 6900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 6900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 6900000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 7100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 7100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 7100000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 7300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 7300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 7300000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 7500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 7500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 7500000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 7700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 7700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 7700000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 7900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 7900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 7900000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 8100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 8100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 8100000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 8300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 8300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 8300000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 8500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 8500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 8500000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 8700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 8700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 8700000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 8900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 8900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 8900000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 9100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 9100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 9100000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 9300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 9300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 9300000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 9500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 9500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 9500000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 9700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 9700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 9700000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 9900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 9900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 9900000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 10100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 10100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 10100000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 10300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 10300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 10300000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 10500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 10500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 10500000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 10700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 10700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 10700000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 10900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 10900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 10900000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 11100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 11100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 11100000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 11300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 11300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 11300000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 11500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 11500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 11500000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 11700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 11700000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 11700000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 11900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 11900000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 11900000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 12100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 12100000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 12100000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 12300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 12300000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 12300000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(48) @ 12500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] begin to collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_monitor_f2p.sv(51) @ 12500000: uvm_test_top.env.i_agt.mon_f2p [my_monitor] end collect one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_model.sv(67) @ 12500000: uvm_test_top.env.mdl [my_model] get one transaction
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(122) @ 102300000: uvm_test_top.env.i_agt.drv [my_driver] over run time!!!!
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(62) @ 102300000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+-------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                 
+-------------------------------------------------------------------------------------------
+m_trans                        my_transaction  -     @1058                                 
+  data                         da(integral)    2     -                                     
+    [0]                        integral        32    'h5ea5e2a9                            
+    [1]                        integral        32    'h65a06f7b                            
+  keep                         da(integral)    2     -                                     
+    [0]                        integral        4     'hc                                   
+    [1]                        integral        4     'hc                                   
+  num_interval_valid           integral        8     'h7                                   
+  num_interval_ready           integral        8     'h6                                   
+  sum_one                      integral        32    'h0                                   
+  begin_time                   time            64    102300000                             
+  depth                        int             32    'd2                                   
+  parent sequence (name)       string          11    my_sequence                           
+  parent sequence (full name)  string          38    uvm_test_top.env.i_agt.sqr.my_sequence
+  sequencer                    string          26    uvm_test_top.env.i_agt.sqr            
+-------------------------------------------------------------------------------------------
+keep_value[          0] = 15
+keep_value[          1] = 14
+keep_value[          2] = 12
+keep_value[          3] =  8
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(95) @ 102300000: uvm_test_top.env.i_agt.drv [my_driver] begin to receive one pkt
+data_size =           0
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(114) @ 102500000: uvm_test_top.env.i_agt.drv [my_driver] end receive one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(122) @ 202300000: uvm_test_top.env.i_agt.drv [my_driver] over run time!!!!
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(62) @ 202300000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+-------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                 
+-------------------------------------------------------------------------------------------
+m_trans                        my_transaction  -     @1062                                 
+  data                         da(integral)    66    -                                     
+    [0]                        integral        32    'ha4ca7f1e                            
+    [1]                        integral        32    'h173a715d                            
+    [2]                        integral        32    'h42eecde2                            
+    [3]                        integral        32    'h473b406a                            
+    [4]                        integral        32    'hde3a9a52                            
+    ...                        ...             ...   ...                                   
+    [61]                       integral        32    'hbeab21b6                            
+    [62]                       integral        32    'h4fb04883                            
+    [63]                       integral        32    'h41e5e9ef                            
+    [64]                       integral        32    'h21ef8084                            
+    [65]                       integral        32    'h47d39c70                            
+  keep                         da(integral)    66    -                                     
+    [0]                        integral        4     'he                                   
+    [1]                        integral        4     'h8                                   
+    [2]                        integral        4     'h8                                   
+    [3]                        integral        4     'hf                                   
+    [4]                        integral        4     'h8                                   
+    ...                        ...             ...   ...                                   
+    [61]                       integral        4     'hc                                   
+    [62]                       integral        4     'h8                                   
+    [63]                       integral        4     'hc                                   
+    [64]                       integral        4     'hf                                   
+    [65]                       integral        4     'hc                                   
+  num_interval_valid           integral        8     'h0                                   
+  num_interval_ready           integral        8     'h0                                   
+  sum_one                      integral        32    'h0                                   
+  begin_time                   time            64    202300000                             
+  depth                        int             32    'd2                                   
+  parent sequence (name)       string          11    my_sequence                           
+  parent sequence (full name)  string          38    uvm_test_top.env.i_agt.sqr.my_sequence
+  sequencer                    string          26    uvm_test_top.env.i_agt.sqr            
+-------------------------------------------------------------------------------------------
+keep_value[          0] = 15
+keep_value[          1] = 14
+keep_value[          2] = 12
+keep_value[          3] =  8
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(95) @ 202300000: uvm_test_top.env.i_agt.drv [my_driver] begin to receive one pkt
+data_size =           0
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(114) @ 202500000: uvm_test_top.env.i_agt.drv [my_driver] end receive one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(122) @ 302300000: uvm_test_top.env.i_agt.drv [my_driver] over run time!!!!
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(62) @ 302300000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+-------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                 
+-------------------------------------------------------------------------------------------
+m_trans                        my_transaction  -     @1066                                 
+  data                         da(integral)    77    -                                     
+    [0]                        integral        32    'h650397e0                            
+    [1]                        integral        32    'h27d888a9                            
+    [2]                        integral        32    'hbf68488e                            
+    [3]                        integral        32    'h6343058b                            
+    [4]                        integral        32    'h3aeca0b9                            
+    ...                        ...             ...   ...                                   
+    [72]                       integral        32    'h60033b54                            
+    [73]                       integral        32    'hb74b43                              
+    [74]                       integral        32    'h82e95dc0                            
+    [75]                       integral        32    'h91f4d660                            
+    [76]                       integral        32    'h6ac6374b                            
+  keep                         da(integral)    77    -                                     
+    [0]                        integral        4     'h8                                   
+    [1]                        integral        4     'hf                                   
+    [2]                        integral        4     'he                                   
+    [3]                        integral        4     'he                                   
+    [4]                        integral        4     'hc                                   
+    ...                        ...             ...   ...                                   
+    [72]                       integral        4     'h8                                   
+    [73]                       integral        4     'he                                   
+    [74]                       integral        4     'h8                                   
+    [75]                       integral        4     'he                                   
+    [76]                       integral        4     'hf                                   
+  num_interval_valid           integral        8     'h0                                   
+  num_interval_ready           integral        8     'h9                                   
+  sum_one                      integral        32    'h0                                   
+  begin_time                   time            64    302300000                             
+  depth                        int             32    'd2                                   
+  parent sequence (name)       string          11    my_sequence                           
+  parent sequence (full name)  string          38    uvm_test_top.env.i_agt.sqr.my_sequence
+  sequencer                    string          26    uvm_test_top.env.i_agt.sqr            
+-------------------------------------------------------------------------------------------
+keep_value[          0] = 15
+keep_value[          1] = 14
+keep_value[          2] = 12
+keep_value[          3] =  8
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(95) @ 302300000: uvm_test_top.env.i_agt.drv [my_driver] begin to receive one pkt
+data_size =           0
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(114) @ 302500000: uvm_test_top.env.i_agt.drv [my_driver] end receive one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(122) @ 402300000: uvm_test_top.env.i_agt.drv [my_driver] over run time!!!!
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(62) @ 402300000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+-------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                 
+-------------------------------------------------------------------------------------------
+m_trans                        my_transaction  -     @1070                                 
+  data                         da(integral)    99    -                                     
+    [0]                        integral        32    'hf890d205                            
+    [1]                        integral        32    'h2be46dca                            
+    [2]                        integral        32    'h7bd41c40                            
+    [3]                        integral        32    'hc8543a01                            
+    [4]                        integral        32    'h1e317cca                            
+    ...                        ...             ...   ...                                   
+    [94]                       integral        32    'hf4ca4ffc                            
+    [95]                       integral        32    'h4a325f67                            
+    [96]                       integral        32    'h2f3498d3                            
+    [97]                       integral        32    'h31d9bcde                            
+    [98]                       integral        32    'hafab9701                            
+  keep                         da(integral)    99    -                                     
+    [0]                        integral        4     'hc                                   
+    [1]                        integral        4     'hf                                   
+    [2]                        integral        4     'h8                                   
+    [3]                        integral        4     'he                                   
+    [4]                        integral        4     'h8                                   
+    ...                        ...             ...   ...                                   
+    [94]                       integral        4     'he                                   
+    [95]                       integral        4     'hf                                   
+    [96]                       integral        4     'h8                                   
+    [97]                       integral        4     'he                                   
+    [98]                       integral        4     'hf                                   
+  num_interval_valid           integral        8     'h9                                   
+  num_interval_ready           integral        8     'h0                                   
+  sum_one                      integral        32    'h0                                   
+  begin_time                   time            64    402300000                             
+  depth                        int             32    'd2                                   
+  parent sequence (name)       string          11    my_sequence                           
+  parent sequence (full name)  string          38    uvm_test_top.env.i_agt.sqr.my_sequence
+  sequencer                    string          26    uvm_test_top.env.i_agt.sqr            
+-------------------------------------------------------------------------------------------
+keep_value[          0] = 15
+keep_value[          1] = 14
+keep_value[          2] = 12
+keep_value[          3] =  8
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(95) @ 402300000: uvm_test_top.env.i_agt.drv [my_driver] begin to receive one pkt
+data_size =           0
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(114) @ 402500000: uvm_test_top.env.i_agt.drv [my_driver] end receive one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(122) @ 502300000: uvm_test_top.env.i_agt.drv [my_driver] over run time!!!!
+
+=======================================================
+
+Solver failed when solving following set of constraints 
+
+
+integer fv_6 /*this._vcs_unit__2865831673_my_transaction_11_0::cons_calc_sum_1_array(keep)*/ = 191;
+
+constraint axi_cons    // (from this) (constraint_mode = ON) (/home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_transaction.sv:18)
+{
+   (0 == (fv_6 /*this._vcs_unit__2865831673_my_transaction_11_0::cons_calc_sum_1_array(keep)*/ % 2));
+}
+
+=======================================================
+
+Info-[CNST-SATE]  A standalone test-case for this failure has automatically been extracted 
+  from randomize serial 10 partition 78.
+  To reproduce the error using the extracted testcase, please use the 
+  following command:
+  cd 
+  /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/./simv.cst/testcases;
+  vcs -sverilog extracted_r_10_p_78_inconsistent_constraints.sv -R
+  To reproduce the error using the original design and verbose logging, re-run
+  simulation using:
+  simv +ntb_solver_debug=trace +ntb_solver_debug_filter=10
+  To reproduce the error using the original design and debug the error with 
+  Verdi/DVE:
+  1. re-compile the original design with -debug_access+all, if not already 
+  done so
+  	% vcs -debug_access+all <other options>
+  2. re-run the simulation interactively with -gui/-verdi
+  	% simv -gui/-verdi <other options>
+  3. enter the following commands to begin interactive constraint 
+  inconsistency debug within Verdi/DVE
+  	I. set the breakpoint:	verdi/dve> stop -solver -serial 10
+  	II. run the simulation till it stops:	verdi/dve> run
+  	III. step in the constraint solver:	verdi/dve> step -solver
+
+Error-[CNST-ICE] Constraint infeasible constraints error
+/home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_sequence.sv, 16
+  As the solver has encountered a failure due to an infeasible set of 
+  constraints, the values printed during this solve cycle are invalid.
+  The solver will preserve original values.
+
+
+Error-[CNST-CIF] Constraints inconsistency failure
+/home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_sequence.sv, 16
+  Constraints are inconsistent and cannot be solved.
+  Please check the inconsistent constraints being printed above and rewrite 
+  them.
+
+UVM_WARNING /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_sequence.sv(16) @ 502300000: uvm_test_top.env.i_agt.sqr@@my_sequence [RNDFLD] Randomization failed in uvm_do_with action
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(62) @ 502300000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+-------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                 
+-------------------------------------------------------------------------------------------
+m_trans                        my_transaction  -     @1074                                 
+  data                         da(integral)    0     -                                     
+  keep                         da(integral)    0     -                                     
+  num_interval_valid           integral        8     'h0                                   
+  num_interval_ready           integral        8     'h0                                   
+  sum_one                      integral        32    'h0                                   
+  begin_time                   time            64    502300000                             
+  depth                        int             32    'd2                                   
+  parent sequence (name)       string          11    my_sequence                           
+  parent sequence (full name)  string          38    uvm_test_top.env.i_agt.sqr.my_sequence
+  sequencer                    string          26    uvm_test_top.env.i_agt.sqr            
+-------------------------------------------------------------------------------------------
+keep_value[          0] = 15
+keep_value[          1] = 14
+keep_value[          2] = 12
+keep_value[          3] =  8
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(95) @ 502300000: uvm_test_top.env.i_agt.drv [my_driver] begin to receive one pkt
+data_size =           0
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(86) @ 502500000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(114) @ 502500000: uvm_test_top.env.i_agt.drv [my_driver] end receive one pkt
+
+=======================================================
+
+Solver failed when solving following set of constraints 
+
+
+integer fv_6 /*this._vcs_unit__2865831673_my_transaction_11_0::cons_calc_sum_1_array(keep)*/ = 99;
+
+constraint axi_cons    // (from this) (constraint_mode = ON) (/home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_transaction.sv:18)
+{
+   (0 == (fv_6 /*this._vcs_unit__2865831673_my_transaction_11_0::cons_calc_sum_1_array(keep)*/ % 2));
+}
+
+=======================================================
+
+Info-[CNST-SATE]  A standalone test-case for this failure has automatically been extracted 
+  from randomize serial 11 partition 42.
+  To reproduce the error using the extracted testcase, please use the 
+  following command:
+  cd 
+  /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/./simv.cst/testcases;
+  vcs -sverilog extracted_r_11_p_42_inconsistent_constraints.sv -R
+  To reproduce the error using the original design and verbose logging, re-run
+  simulation using:
+  simv +ntb_solver_debug=trace +ntb_solver_debug_filter=11
+  To reproduce the error using the original design and debug the error with 
+  Verdi/DVE:
+  1. re-compile the original design with -debug_access+all, if not already 
+  done so
+  	% vcs -debug_access+all <other options>
+  2. re-run the simulation interactively with -gui/-verdi
+  	% simv -gui/-verdi <other options>
+  3. enter the following commands to begin interactive constraint 
+  inconsistency debug within Verdi/DVE
+  	I. set the breakpoint:	verdi/dve> stop -solver -serial 11
+  	II. run the simulation till it stops:	verdi/dve> run
+  	III. step in the constraint solver:	verdi/dve> step -solver
+
+Error-[CNST-ICE] Constraint infeasible constraints error
+/home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_sequence.sv, 16
+  As the solver has encountered a failure due to an infeasible set of 
+  constraints, the values printed during this solve cycle are invalid.
+  The solver will preserve original values.
+
+
+Error-[CNST-CIF] Constraints inconsistency failure
+/home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_sequence.sv, 16
+  Constraints are inconsistent and cannot be solved.
+  Please check the inconsistent constraints being printed above and rewrite 
+  them.
+
+UVM_WARNING /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_sequence.sv(16) @ 502500000: uvm_test_top.env.i_agt.sqr@@my_sequence [RNDFLD] Randomization failed in uvm_do_with action
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(62) @ 502500000: uvm_test_top.env.i_agt.drv [my_driver] begin to drive one pkt
+-------------------------------------------------------------------------------------------
+Name                           Type            Size  Value                                 
+-------------------------------------------------------------------------------------------
+m_trans                        my_transaction  -     @1078                                 
+  data                         da(integral)    0     -                                     
+  keep                         da(integral)    0     -                                     
+  num_interval_valid           integral        8     'h0                                   
+  num_interval_ready           integral        8     'h0                                   
+  sum_one                      integral        32    'h0                                   
+  begin_time                   time            64    502500000                             
+  depth                        int             32    'd2                                   
+  parent sequence (name)       string          11    my_sequence                           
+  parent sequence (full name)  string          38    uvm_test_top.env.i_agt.sqr.my_sequence
+  sequencer                    string          26    uvm_test_top.env.i_agt.sqr            
+-------------------------------------------------------------------------------------------
+keep_value[          0] = 15
+keep_value[          1] = 14
+keep_value[          2] = 12
+keep_value[          3] =  8
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(95) @ 502500000: uvm_test_top.env.i_agt.drv [my_driver] begin to receive one pkt
+data_size =           0
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(86) @ 502700000: uvm_test_top.env.i_agt.drv [my_driver] end drive one pkt
+UVM_INFO /home/eda/feifan/vlc_plat/PAM/uvm_vertification/pam_map/sim/../sv_src/my_driver.sv(114) @ 502700000: uvm_test_top.env.i_agt.drv [my_driver] end receive one pkt
+TEST CASE PASSED
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  200
+UVM_WARNING :    4
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNDFLD]     4
+[RNTST]     1
+[my_driver]    40
+[my_model]    53
+[my_monitor]   106
+$finish called from file "/home/eda/uvm/uvm-1.1d/src/base/uvm_root.svh", line 430.
+$finish at simulation time            503700000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 503700000 ps
+CPU Time:      0.230 seconds;       Data structure size:   0.4Mb
+Sat Dec 26 10:06:47 2020

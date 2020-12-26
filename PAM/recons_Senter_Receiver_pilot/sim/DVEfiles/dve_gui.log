@@ -1,0 +1,14 @@
+Warning : License for product VCSRuntime_Net(725) will expire within 8 days, on: 30-dec-2020.
+If you would like to temporarily disable this message, set 
+ the VCS_LIC_EXPIRE_WARNING environment variable to the number of days
+before expiration that you want this message to start (the minimum is 0).
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP2_Full64; Runtime version O-2018.09-SP2_Full64;  Dec 23 14:46 2020
+VCD+ Writer O-2018.09-SP2_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+The file '/home/eda/feifan/vlc_plat/PAM/Senter_Receiver_pilot/sim/inter.vpd' was opened successfully.
+1000000 ps
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1000000 ps
+CPU Time:      0.150 seconds;       Data structure size:   0.0Mb
+Wed Dec 23 14:54:24 2020

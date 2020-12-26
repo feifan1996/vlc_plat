@@ -1,0 +1,381 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /home/eda/feifan/vlc_plat/PAM/Senter/Bit_Align/sim/DVEfiles/dve_checkpoint_29842_1.tcl}}
+gui_set_state_value -category Layout -key child_assertion_size_x -value 1916
+gui_set_state_value -category Layout -key child_assertion_size_y -value 149
+gui_set_state_value -category Layout -key child_console_size_x -value 1437
+gui_set_state_value -category Layout -key child_console_size_y -value 196
+gui_set_state_value -category Layout -key child_data_coltype -value 56
+gui_set_state_value -category Layout -key child_data_colvalue -value 13
+gui_set_state_value -category Layout -key child_data_colvariable -value 314
+gui_set_state_value -category Layout -key child_data_size_x -value 277
+gui_set_state_value -category Layout -key child_data_size_y -value 471
+gui_set_state_value -category Layout -key child_driver_size_x -value 1481
+gui_set_state_value -category Layout -key child_driver_size_y -value 244
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 491
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 111
+gui_set_state_value -category Layout -key child_hier_size_x -value 495
+gui_set_state_value -category Layout -key child_hier_size_y -value 471
+gui_set_state_value -category Layout -key child_hier_sort_order -value 1
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value 1
+gui_set_state_value -category Layout -key child_source_showstate -value minimized
+gui_set_state_value -category Layout -key child_source_size_x -value 201
+gui_set_state_value -category Layout -key child_source_size_y -value 294
+gui_set_state_value -category Layout -key child_wave_colname -value 222
+gui_set_state_value -category Layout -key child_wave_colvalue -value 222
+gui_set_state_value -category Layout -key child_wave_left -value 449
+gui_set_state_value -category Layout -key child_wave_right -value 1095
+gui_set_state_value -category Layout -key main_pos_x -value 98
+gui_set_state_value -category Layout -key main_pos_y -value 79
+gui_set_state_value -category Layout -key main_size_x -value 1535
+gui_set_state_value -category Layout -key main_size_y -value 853
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1554
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 647
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 127
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 109
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1676
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 868
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key TopLevel.2|EkTopVbox|wndWorkspace|qt_workspacechild2|Wave.1|left|filterVBox|controlHBox|unnamed -value_type string -value {*add_raddr *ram_raddr {*mst_exec_state == INIT_READ}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|BuildTab|m_rebuildBtnGroup|m_customCmdCombo} -value_type string -value {{-sverilog} sverilog}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-nc -licqueue -a simulate.log -do tb_top_dma_simulate.do} {-ucligui -nc -licqueue -l simulate.log -do tb_top_dma_simulate.do} {-nc -licqueue -a simulate.log -do tb_top_avalon_simulate.do}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/home/eda/feifan/vlc_plat/PAM/Senter/Bit_Align/sim /home/eda/vivado_prj/axi_dma_trans/axi_dma_ram.sim/sim_1/behav/vcs /home/eda/vivado_prj/avalon_vip_test/avalon_vip_test.sim/sim_1/behav/vcs}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {./simv ./tb_top_dma_simv /home/eda/vivado_prj/axi_dma_trans/axi_dma_ram.sim/sim_1/behav/vcs/tb_top_dma_simv ./tb_top_avalon_simv}
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
+gui_list_expand -id  Hier.1   tb_add_head_frame
+gui_list_select -id Hier.1 -current_item_name tb_add_head_frame.uut_add_head -current_item_type Scope  -selected  { tb_add_head_frame.uut_add_head   }
+gui_list_select -id Data.1 -selected  { tb_add_head_frame.uut_add_head.M_in_valid   }
+gui_list_select_all -id Data.1
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { tb_add_head_frame.uut_add_head.clk tb_add_head_frame.uut_add_head.rst_n {tb_add_head_frame.uut_add_head.M_in_pam_data[23:0]} tb_add_head_frame.uut_add_head.M_in_valid tb_add_head_frame.uut_add_head.M_in_ready {tb_add_head_frame.uut_add_head.sent_data[11:0]} {tb_add_head_frame.uut_add_head.i[31:0]} tb_add_head_frame.uut_add_head.rec_valid tb_add_head_frame.uut_add_head.sent_valid {tb_add_head_frame.uut_add_head.sent_addr[4:0]} tb_add_head_frame.uut_add_head.rec_flag_IDLE_over tb_add_head_frame.uut_add_head.rec_flag_S0_over tb_add_head_frame.uut_add_head.rec_flag_S1_over tb_add_head_frame.uut_add_head.sent_flag_IDLE_over tb_add_head_frame.uut_add_head.sent_flag_S0_over tb_add_head_frame.uut_add_head.sent_flag_S1_over tb_add_head_frame.uut_add_head.sent_flag_S2_over {tb_add_head_frame.uut_add_head.syn_signal_addr[4:0]} {tb_add_head_frame.uut_add_head.ctrl_signal_addr[4:0]} tb_add_head_frame.uut_add_head.M_in_ready_r {tb_add_head_frame.uut_add_head.rec_addr[4:0]} {tb_add_head_frame.uut_add_head.sent_addr_r[4:0]} {tb_add_head_frame.uut_add_head.cnt_stored_data[5:0]} {tb_add_head_frame.uut_add_head.cnt_stored_data_r[5:0]} {tb_add_head_frame.uut_add_head.sent_data_r[11:0]} {tb_add_head_frame.uut_add_head.rec_cur_state[1:0]} {tb_add_head_frame.uut_add_head.rec_nxt_state[1:0]} {tb_add_head_frame.uut_add_head.sent_cur_state[2:0]} {tb_add_head_frame.uut_add_head.sent_nxt_state[2:0]} {tb_add_head_frame.uut_add_head.syn_signal_addr_r[4:0]} {tb_add_head_frame.uut_add_head.ctrl_signal_addr_r[4:0]} {tb_add_head_frame.uut_add_head.m_seq[14:0]} {tb_add_head_frame.uut_add_head.data_mem[0:31][11:0]} {tb_add_head_frame.uut_add_head.AD_CVER_WIDTH[31:0]} {tb_add_head_frame.uut_add_head.ADDR_MEM_WIDTH[31:0]} {tb_add_head_frame.uut_add_head.PAM_ORDER[31:0]} {tb_add_head_frame.uut_add_head.MEM_DEPTH[31:0]} {tb_add_head_frame.uut_add_head.IDLE[1:0]} {tb_add_head_frame.uut_add_head.S0[1:0]} {tb_add_head_frame.uut_add_head.S1[1:0]} {tb_add_head_frame.uut_add_head.SENT_IDLE[2:0]} {tb_add_head_frame.uut_add_head.SENT_S0[2:0]} {tb_add_head_frame.uut_add_head.SENT_S1[2:0]} {tb_add_head_frame.uut_add_head.SENT_S2[2:0]} } -insertionbar
+gui_sim_continue 1000000 
+gui_sim_continue 1000000 
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 44693 210428
+gui_wv_zoom_timerange -id  Wave.1 51696 113731
+gui_marker_move -id  Wave.1 C1 76000
+gui_marker_move -id  Wave.1 C1 78000
+gui_marker_move -id  Wave.1 C1 80000
+gui_wv_scrollright -id  Wave.1  page
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_wv_zoom_timerange -id  Wave.1 48056 193149
+gui_wv_zoom_timerange -id  Wave.1 84165 115102
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 117000
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_marker_move -id  Wave.1 C1 49000
+gui_wv_zoom_timerange -id  Wave.1 39635 51618
+gui_list_select -id Wave.1 -selected  { tb_add_head_frame.uut_add_head.M_in_valid   }
+gui_list_select -id Wave.1 -selected  { {tb_add_head_frame.uut_add_head.M_in_pam_data[23:0]}   }
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_marker_move -id  Wave.1 C1 119000
+gui_marker_select -id  Wave.1 { C1 }
+gui_marker_move -id  Wave.1 C1 103000
+gui_wv_zoom_timerange -id  Wave.1 107102 128522
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_list_select -id Wave.1 -selected  { tb_add_head_frame.uut_add_head.M_in_ready   }
+gui_list_select -id Wave.1 -selected  { tb_add_head_frame.uut_add_head.M_in_valid   }
+gui_marker_move -id  Wave.1 C1 117000
+gui_wv_zoom_timerange -id  Wave.1 113602 129557
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_list_select -id Wave.1 -selected  { {tb_add_head_frame.uut_add_head.data_mem[0:31][11:0]}   }
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 182000
+gui_marker_move -id  Wave.1 C1 184000
+gui_marker_move -id  Wave.1 C1 186000
+gui_marker_move -id  Wave.1 C1 188000
+gui_marker_move -id  Wave.1 C1 190000
+gui_marker_move -id  Wave.1 C1 192000
+gui_marker_move -id  Wave.1 C1 182000
+gui_marker_move -id  Wave.1 C1 184000
+gui_marker_move -id  Wave.1 C1 186000
+gui_marker_move -id  Wave.1 C1 188000
+gui_marker_move -id  Wave.1 C1 190000
+gui_marker_move -id  Wave.1 C1 192000
+gui_marker_move -id  Wave.1 C1 194000
+gui_marker_move -id  Wave.1 C1 196000
+gui_marker_move -id  Wave.1 C1 198000
+gui_marker_move -id  Wave.1 C1 200100
+gui_marker_move -id  Wave.1 C1 202000
+gui_marker_move -id  Wave.1 C1 204000
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 206000
+gui_marker_move -id  Wave.1 C1 208000
+gui_marker_move -id  Wave.1 C1 210000
+gui_marker_move -id  Wave.1 C1 212000
+gui_marker_move -id  Wave.1 C1 214034
+gui_link_wave_window -link -id Wave.1
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 244000
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_close_window -window TopLevel.2

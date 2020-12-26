@@ -1,0 +1,38 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/eda/feifan/vlc_plat/PAM/Senter/Add_Head_Frame/sim/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpKTQHb8
+synUtils::sendTool -active {_icl_start_rpc -version "O-2018.09-SP2_Full64" -sync_file /tmp/vcs_dve_rpc.eda.11790}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.eda.11790}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {tb_add_head_frame.uut_add_head.ADDR_MEM_WIDTH tb_add_head_frame.uut_add_head.AD_CVER_WIDTH tb_add_head_frame.uut_add_head.IDLE tb_add_head_frame.uut_add_head.MEM_DEPTH tb_add_head_frame.uut_add_head.M_in_pam_data tb_add_head_frame.uut_add_head.M_in_ready tb_add_head_frame.uut_add_head.M_in_ready_r tb_add_head_frame.uut_add_head.M_in_valid tb_add_head_frame.uut_add_head.PAM_ORDER tb_add_head_frame.uut_add_head.S0 tb_add_head_frame.uut_add_head.S1 tb_add_head_frame.uut_add_head.SENT_IDLE tb_add_head_frame.uut_add_head.SENT_S0 tb_add_head_frame.uut_add_head.SENT_S1 tb_add_head_frame.uut_add_head.SENT_S2 tb_add_head_frame.uut_add_head.clk tb_add_head_frame.uut_add_head.cnt_stored_data tb_add_head_frame.uut_add_head.cnt_stored_data_r tb_add_head_frame.uut_add_head.ctrl_signal_addr tb_add_head_frame.uut_add_head.ctrl_signal_addr_r tb_add_head_frame.uut_add_head.data_mem tb_add_head_frame.uut_add_head.i tb_add_head_frame.uut_add_head.m_seq tb_add_head_frame.uut_add_head.rec_addr tb_add_head_frame.uut_add_head.rec_cur_state tb_add_head_frame.uut_add_head.rec_flag_IDLE_over tb_add_head_frame.uut_add_head.rec_flag_S0_over tb_add_head_frame.uut_add_head.rec_flag_S1_over tb_add_head_frame.uut_add_head.rec_nxt_state tb_add_head_frame.uut_add_head.rec_valid tb_add_head_frame.uut_add_head.rst_n tb_add_head_frame.uut_add_head.sent_addr tb_add_head_frame.uut_add_head.sent_addr_r tb_add_head_frame.uut_add_head.sent_cur_state tb_add_head_frame.uut_add_head.sent_data tb_add_head_frame.uut_add_head.sent_data_r tb_add_head_frame.uut_add_head.sent_flag_IDLE_over tb_add_head_frame.uut_add_head.sent_flag_S0_over tb_add_head_frame.uut_add_head.sent_flag_S1_over tb_add_head_frame.uut_add_head.sent_flag_S2_over tb_add_head_frame.uut_add_head.sent_nxt_state tb_add_head_frame.uut_add_head.sent_valid tb_add_head_frame.uut_add_head.syn_signal_addr tb_add_head_frame.uut_add_head.syn_signal_addr_r } -aggregates  -fid VPD0
+synopsys::run -relative 1000000.000000ps
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+synopsys::run -relative 1000000.000000ps
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

@@ -1,0 +1,4 @@
+DPI_STUB_OBJS += ./../simv.daidir/vc_hdrs.o
+./../simv.daidir/vc_hdrs.o: ./../simv.daidir/vc_hdrs.c
+	@$(CC) -I/home/eda/synopsys/vcs_2018/include  -pipe -fPIC -DVCS    -I/home/eda/synopsys/vcs_2018/include  -fPIC -c -o ./../simv.daidir/vc_hdrs.o ./../simv.daidir/vc_hdrs.c
+	@strip -g ./../simv.daidir/vc_hdrs.o

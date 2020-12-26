@@ -1,0 +1,58 @@
+09:52:41    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe ./simv -pid 11790 -toolin /tmp/vcs_20201218015240_11789_eda..stdin -toolout /tmp/vcs_20201218015240_11789_eda..stdout  
+09:52:41    17 -->                                                                 [tcl] set ucliGUI::state
+09:52:42    18 -->                                                                     [tcl] gui_update_simulator_buttons
+09:52:42    19 -->                                                                         [tcl] set ucliGUI::state
+09:52:42    20 -->                                                                             [tcl] ucliCore::getToolPID
+09:52:42    21 -->                                                                                 [tcl] synopsys::env hasTB
+09:52:42    22 -->                                                                                     [tcl] trigger_hier_stack_context_switch 0
+09:52:42    23 -->                                                                                         [tcl] synUtils::setDVEInitPhase 1
+09:52:42    24 -->                                                                                             [tcl] gui_get_env SIMSETUP::SIMVPD
+09:52:42    25 --> ...  [tcl] synopsys::dump -type VPD -file /home/eda/feifan/vlc_plat/PAM/Senter/Add_Head_Frame/sim/inter.vpd -locking
+09:52:42    26 --> ...      [tcl] gui_update_simulator_buttons
+09:52:42    27 --> ...          [tcl] synopsys::dump -autoflush on -fid VPD0
+09:52:42    28 --> ...              [tcl] set ::dve_fid VPD0
+09:52:42    29 --> ...                  [tcl] synUtils::setDVEInitPhase 0
+09:52:42    30 --> ...                      [tcl] ucliCore::getToolPID
+09:52:42    31 --> ...                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpKTQHb8
+09:52:42    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "O-2018.09-SP2_Full64" -sync_file /tmp/vcs_dve_rpc.eda.11790}
+09:52:42    33 --> ...                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.eda.11790}
+09:52:43    34 --> ...                                      [tcl] dveMisc::vbusExpand tb_add_head_frame
+09:52:43    35 --> ...                                          [tcl] config endofsim noexit
+09:52:43    36 --> ...                                              [tcl] config onfail enable all
+09:52:43    37 --> ...                                                  [tcl] config syscaddplainmembers
+09:52:43    38 --> ...                                                      [tcl] config syscaddsourcenames
+09:52:43    39 --> ...                                                          [tcl] config syscaddstructtypes
+09:52:43    40 --> ...                                                              [tcl] synopsys::listing -disable
+09:52:47    41 --> ...                                                                  [tcl] dveMisc::vbusExpand tb_add_head_frame.uut_add_head
+09:52:52    42 --> ...                                                                      [tcl] synopsys::dump -add {tb_add_head_frame.uut_add_head.ADDR_MEM_WIDTH tb_add_head_frame.uut_add_head.AD_CVER_WIDTH tb_add_head_frame.uut_add_head.IDLE tb_add_head_frame.uut_add_head.MEM_DEPTH tb_add_head_frame.uut_add_head.M_in_pam_data tb_add_head_frame.uut_add_head.M_in_ready tb_add_head_frame.uut_add_head.M_in_ready_r tb_add_head_frame.uut_add_head.M_in_valid tb_add_head_frame.uut_add_head.PAM_ORDER tb_add_head_frame.uut_add_head.S0 tb_add_head_frame.uut_add_head.S1 tb_add_head_frame.uut_add_head.SENT_IDLE tb_add_head_frame.uut_add_head.SENT_S0 tb_add_head_frame.uut_add_head.SENT_S1 tb_add_head_frame.uut_add_head.SENT_S2 tb_add_head_frame.uut_add_head.clk tb_add_head_frame.uut_add_head.cnt_stored_data tb_add_head_frame.uut_add_head.cnt_stored_data_r tb_add_head_frame.uut_add_head.ctrl_signal_addr tb_add_head_frame.uut_add_head.ctrl_signal_addr_r tb_add_head_frame.uut_add_head.data_mem tb_add_head_frame.uut_add_head.i tb_add_head_frame.uut_add_head.m_seq tb_add_head_frame.uut_add_head.rec_addr tb_add_head_frame.uut_add_head.rec_cur_state tb_add_head_frame.uut_add_head.rec_flag_IDLE_over tb_add_head_frame.uut_add_head.rec_flag_S0_over tb_add_head_frame.uut_add_head.rec_flag_S1_over tb_add_head_frame.uut_add_head.rec_nxt_state tb_add_head_frame.uut_add_head.rec_valid tb_add_head_frame.uut_add_head.rst_n tb_add_head_frame.uut_add_head.sent_addr tb_add_head_frame.uut_add_head.sent_addr_r tb_add_head_frame.uut_add_head.sent_cur_state tb_add_head_frame.uut_add_head.sent_data tb_add_head_frame.uut_add_head.sent_data_r tb_add_head_frame.uut_add_head.sent_flag_IDLE_over tb_add_head_frame.uut_add_head.sent_flag_S0_over tb_add_head_frame.uut_add_head.sent_flag_S1_over tb_add_head_frame.uut_add_head.sent_flag_S2_over tb_add_head_frame.uut_add_head.sent_nxt_state tb_add_head_frame.uut_add_head.sent_valid tb_add_head_frame.uut_add_head.syn_signal_addr tb_add_head_frame.uut_add_head.syn_signal_addr_r } -aggregates  -fid VPD0
+09:52:57    43 --> ...                                                                          [tcl] synopsys::run -relative 1000000.000000ps
+09:52:57    44 --> ...                                                                              [tcl] set ucliGUI::state
+09:52:57    45 --> ...                                                                                  [tcl] gui_update_simulator_buttons
+09:52:57    46 --> ...                                                                                      [tcl] set ucliGUI::state
+09:52:57    47 --> ...                                                                                          [tcl] set ucliGUI::state
+09:52:57    48 --> ...                                                                                              [tcl] set ucliGUI::state
+09:52:57    49 --> ...                                                                                                  [tcl] set ucliGUI::state
+09:52:57    50 --> ...  [tcl] catch {senv activeDomain} dveMisc::result 
+09:52:57    51 --> ...      [tcl] set dveMisc::result
+09:52:57    52 --> ...          [tcl] gui_update_simulator_buttons
+09:52:57    53 --> ...              [tcl] synopsys::run -relative 1000000.000000ps
+09:52:57    54 --> ...                  [tcl] set ucliGUI::state
+09:52:57    55 --> ...                      [tcl] gui_update_simulator_buttons
+09:52:57    56 --> ...                          [tcl] set ucliGUI::state
+09:52:57    57 --> ...                              [tcl] set ucliGUI::state
+09:52:57    58 --> ...                                  [tcl] set ucliGUI::state
+09:52:57    59 --> ...                                      [tcl] set ucliGUI::state
+09:52:57    60 --> ...                                          [tcl] catch {senv activeDomain} dveMisc::result 
+09:52:57    61 --> ...                                              [tcl] set dveMisc::result
+09:52:57    62 --> ...                                                  [tcl] gui_update_simulator_buttons
+10:04:17    63 --> ...                                                      [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+10:04:17    64 --> ...                                                          [tcl] synopsys::finish
+10:04:17    65 --> ...                                                              [tcl] set ucliGUI::state
+10:04:17    66 --> ...                                                                  [tcl] gui_update_simulator_buttons
+10:04:17    67 --> ...                                                                      [tcl] set ucliGUI::state
+10:04:17    68 --> ...                                                                          [tcl] catch {senv activeDomain} dveMisc::result 
+10:04:17    69 --> ...                                                                              [tcl] set dveMisc::result
+10:04:17    70 --> ...                                                                                  [tcl] gui_update_simulator_buttons
+10:04:17    71 --> ...                                                                                      [tcl] catch {senv activeDomain} dveMisc::result 
+10:04:17    72 --> ...                                                                                          [tcl] set dveMisc::result
+10:04:17    73 --> ...                                                                                              [tcl] ucli_exit

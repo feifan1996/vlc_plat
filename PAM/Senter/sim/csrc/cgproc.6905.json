@@ -1,0 +1,128 @@
+{
+    "ObjArchives": [
+        {
+            "archive": "archive.9/_6905_archive_1.a",
+            "objects": [
+                [
+                    "wpxB0_d.o",
+                    64244
+                ],
+                [
+                    "amcQwB.o",
+                    97740
+                ]
+            ],
+            "size": 161984
+        }
+    ],
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "Modules": {
+        "...MASTER...": {
+            "child_modules": {
+                "tb_senter": 1
+            },
+            "start_perf": [
+                0.18245196342468262,
+                0.075999999999999998,
+                0.035999999999999997,
+                256128,
+                269768,
+                1608426790.083586,
+                8604829145836
+            ],
+            "nMops": 0,
+            "end_perf": [
+                0.18572497367858887,
+                0.075999999999999998,
+                0.040000000000000001,
+                258036,
+                269768,
+                8604838361564,
+                0,
+                0
+            ],
+            "nQuads": 0,
+            "nRouts": 5
+        },
+        "tb_senter": {
+            "start_perf": [
+                0.18579602241516113,
+                0.075999999999999998,
+                0.040000000000000001,
+                258036,
+                269768,
+                1608426790.08693,
+                8604838542603
+            ],
+            "child_modules": {},
+            "nQuads": 2548,
+            "Compiled": "Yes",
+            "nMops": 5961,
+            "Compiled Times": 10,
+            "end_perf": [
+                0.22518587112426758,
+                0.108,
+                0.043999999999999997,
+                264932,
+                269768,
+                8604949197011,
+                8589934593,
+                0
+            ],
+            "significant_routs": [
+                [
+                    37,
+                    "R_VCSgd_wpxB0_25",
+                    3115866,
+                    2740,
+                    563
+                ],
+                [
+                    132,
+                    "R_VCSgd_wpxB0_84",
+                    3915462,
+                    3312,
+                    641
+                ]
+            ],
+            "nRouts": 238
+        }
+    },
+    "CompUnits": {
+        "wpxB0_d": {
+            "mod": "tb_senter",
+            "out": "wpxB0_d.o",
+            "bytes": 64244,
+            "archive": "archive.9/_6905_archive_1.a",
+            "mode": 4,
+            "text": 35832,
+            "checksum": 0
+        }
+    },
+    "stat": {
+        "ru_self_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.108,
+            "ru_stime_sec": 0.048000000000000001,
+            "ru_nivcsw": 6,
+            "ru_maxrss_kb": 119612,
+            "ru_minflt": 9446,
+            "ru_nvcsw": 23
+        },
+        "cpu_cycles_end": 8604956918035,
+        "ru_childs_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0040000000000000001,
+            "ru_stime_sec": 0.0,
+            "ru_nivcsw": 8,
+            "ru_maxrss_kb": 24892,
+            "ru_minflt": 3994,
+            "ru_nvcsw": 19
+        },
+        "peak_mem_kb": 269768
+    }
+}

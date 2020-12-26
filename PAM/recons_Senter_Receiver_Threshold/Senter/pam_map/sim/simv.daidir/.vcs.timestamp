@@ -1,0 +1,126 @@
+0 
+30
++cli+1
++itf+/home/eda/synopsys/vcs_2018/linux64/lib/vcsdp.tab
++memcbk
++v2k
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/home/eda/synopsys/vcs_2018/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -Wl,-no-as-needed -rdynamic
+-Mobjects= /home/eda/synopsys/vcs_2018/linux64/lib/libvirsim.so /home/eda/synopsys/vcs_2018/linux64/lib/liberrorinf.so /home/eda/synopsys/vcs_2018/linux64/lib/libsnpsmalloc.so /home/eda/synopsys/vcs_2018/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/home/eda/synopsys/vcs_2018/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/home/eda/synopsys/vcs_2018/include
+-Xcbug=0x1
+-debug=1
+-full64
+-gen_obj
+-picarchive
+../rtl/pam_map.v
+../tb/tb_pam_map.v
+/home/eda/synopsys/vcs_2018/linux64/bin/vcs1
+81
+sysc_uni_pwd=/home/eda/feifan/vlc_plat/PAM/recons_Senter_Receiver/Senter/pam_map/sim
+XMODIFIERS=@im=ibus
+XDG_VTNR=7
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+XDG_SESSION_ID=c2
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_MENU_PREFIX=gnome-
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/eda
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/
+XDG_CURRENT_DESKTOP=Unity
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+XAUTHORITY=/home/eda/.Xauthority
+WV_HOME=/home/eda/synopsys/wv/O-2018.09-SP2
+VTE_VERSION=3409
+VMR_MODE_FLAG=64
+VERDI_HOME=/home/eda/synopsys/verdi_2018
+VCS_MODE_FLAG=64
+VCS_HOME=/home/eda/synopsys/vcs_2018
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux64
+UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/2139
+UNAME=/bin/uname
+TOOL_HOME=/home/eda/synopsys/vcs_2018/linux64
+TEXTDOMAINDIR=/usr/share/locale/
+TEXTDOMAIN=im-config
+SYN_HOME=/home/eda/synopsys/syn
+SYNOPSYS_SIM_SETUP=/home/eda/vivado/lib/synopsys_sim.setup
+SSH_AUTH_SOCK=/run/user/1000/keyring-5QybjQ/ssh
+SPYGLASS=/home/eda/synopsys/spyglass/SpyGlass-L2016.06/SPYGLASS_HOME
+SESSION_MANAGER=local/ubuntu:@/tmp/.ICE-unix/2343,unix/ubuntu:/tmp/.ICE-unix/2343
+SESSIONTYPE=gnome-session
+SESSION=ubuntu
+SELINUX_INIT=YES
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SCL_HOME=/home/eda/synopsys/scl/2018.06-SP1/linux64
+QUESTASIM_PATH=/home/eda/questasim/questasim
+QT_QPA_PLATFORMTHEME=appmenu-qt5
+QT_IM_MODULE=ibus
+QT4_IM_MODULE=xim
+PT_HOME=/home/eda/synopsys/pt
+OVA_UUM=0
+MGLS_LICENSE_FILE=/home/eda/questasim/questasim/license/LICENSE.txt
+MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path
+LESSOPEN=| /usr/bin/lesspipe %s
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LC_TIME=zh_CN.UTF-8
+LC_TELEPHONE=zh_CN.UTF-8
+LC_PAPER=zh_CN.UTF-8
+LC_NUMERIC=zh_CN.UTF-8
+LC_NAME=zh_CN.UTF-8
+LC_MONETARY=zh_CN.UTF-8
+LC_MEASUREMENT=zh_CN.UTF-8
+LC_IDENTIFICATION=zh_CN.UTF-8
+LC_ALL=C
+LC_ADDRESS=zh_CN.UTF-8
+JOB=dbus
+INSTANCE=
+IM_CONFIG_PHASE=1
+HSPICE_HOME=/home/eda/synopsys/hspice/O-2018.09-SP2/hspice
+GTK_MODULES=overlay-scrollbar:unity-gtk-module
+GTK_IM_MODULE=ibus
+GPG_AGENT_INFO=/run/user/1000/keyring-5QybjQ/gpg:0:1
+GNOME_KEYRING_PID=2136
+GNOME_KEYRING_CONTROL=/run/user/1000/keyring-5QybjQ
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDM_LANG=en_US
+GDMSESSION=ubuntu
+FM_HOME=/home/eda/synopsys/fm
+DESKTOP_SESSION=ubuntu
+DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
+DC_HOME=/home/eda/synopsys/dc
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-ETFOD139mz
+CORETOOL_HOME=/home/eda/synopsys/core/coretools/L-2016.09-SP1/linux64/dware
+COMPIZ_CONFIG_PROFILE=ubuntu
+COLORTERM=gnome-terminal
+CLUTTER_IM_MODULE=xim
+0
+3
+1608434254 ../rtl/pam_map.v
+1608433589 ../tb/tb_pam_map.v
+1551421246 /home/eda/synopsys/vcs_2018/linux64/lib/vcsdp.tab
+4
+1551422344 /home/eda/synopsys/vcs_2018/linux64/lib/libvirsim.so
+1551421792 /home/eda/synopsys/vcs_2018/linux64/lib/liberrorinf.so
+1551421768 /home/eda/synopsys/vcs_2018/linux64/lib/libsnpsmalloc.so
+1551421789 /home/eda/synopsys/vcs_2018/linux64/lib/libvfs.so
+1608434266 simv.daidir
+-1 partitionlib

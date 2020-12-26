@@ -1,0 +1,240 @@
+# Begin_DVE_Session_Save_Info
+# DVE restart session
+# Saved on Sun Dec 20 09:52:27 2020
+# Designs open: 1
+#   Sim: /home/eda/feifan/vlc_plat/PAM/Senter_Receiver/sim/simv
+# Toplevel windows open: 2
+# 	TopLevel.1
+# 	TopLevel.2
+#   Source.1: tb_senter_syn
+#   Wave.1: 67 signals
+#   Group count = 2
+#   Group Group1 signal count = 23
+#   Group uut_demodulation signal count = 67
+# End_DVE_Session_Save_Info
+
+# DVE version: O-2018.09-SP2_Full64
+# DVE build date: Feb 28 2019 23:39:41
+
+
+#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+
+gui_set_loading_session_type Restart
+gui_continuetime_set -value 1000000
+gui_clear_window -type Wave
+gui_clear_window -type List
+
+# Application preferences
+gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
+#<WindowLayout>
+
+# DVE top-level session
+
+
+# Create and position top-level window: TopLevel.1
+
+set TopLevel.1 TopLevel.1
+
+# Docked window settings
+set HSPane.1 HSPane.1
+set Hier.1 Hier.1
+set DLPane.1 DLPane.1
+set Data.1 Data.1
+set Console.1 Console.1
+gui_sync_global -id ${TopLevel.1} -option true
+
+# MDI window settings
+set Source.1 Source.1
+gui_update_layout -id ${Source.1} {{left 0} {top 0} {width 205} {height 376} {show_state normal} {dock_state undocked} {dock_on_new_line false}}
+
+# End MDI window settings
+
+
+# Create and position top-level window: TopLevel.2
+
+set TopLevel.2 TopLevel.2
+
+# Docked window settings
+gui_sync_global -id ${TopLevel.2} -option true
+
+# MDI window settings
+set Wave.1 Wave.1
+gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 448} {child_wave_right 1094} {child_wave_colname 222} {child_wave_colvalue 222} {child_wave_col1 0} {child_wave_col2 1}}
+
+# End MDI window settings
+
+
+#</WindowLayout>
+
+#<Database>
+
+gui_set_precision 1ps
+gui_set_time_units 1ps
+#</Database>
+
+# DVE Global setting session: 
+
+
+# Global: Breakpoints
+
+# Global: Bus
+
+# Global: Expressions
+
+# Global: Signal Time Shift
+
+# Global: Signal Compare
+
+# Global: Signal Groups
+gui_load_child_values {tb_senter_syn.uut_receiver.uut_demodulation}
+gui_load_child_values {tb_senter_syn}
+
+
+set _session_group_1 Group1
+gui_sg_create "$_session_group_1"
+set Group1 "$_session_group_1"
+
+gui_sg_addsignal -group "$_session_group_1" { tb_senter_syn.M_AXIS_tready tb_senter_syn.ad_data tb_senter_syn.m_axi_tvalid tb_senter_syn.m_axi_tlast tb_senter_syn.m_axi_tdata tb_senter_syn.m_axi_tkeep tb_senter_syn.clk tb_senter_syn.arst_n tb_senter_syn.M_AXIS_tdata tb_senter_syn.M_AXIS_tlast tb_senter_syn.M_AXIS_tkeep tb_senter_syn.M_AXIS_tvalid tb_senter_syn.m_axi_tready tb_senter_syn.DATA_WIDTH tb_senter_syn.PAM_ORDER tb_senter_syn.MEM_ADDR_WIDTH tb_senter_syn.AD_CVER_WIDTH tb_senter_syn.ADDR_MEM_WIDTH tb_senter_syn.WIDTH_RESULT tb_senter_syn.LENGTH_DATA tb_senter_syn.LENTGRH_M_SEQ tb_senter_syn.THRESHOLD tb_senter_syn.MEM_ADDR_WIDTH_DEMO }
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.DATA_WIDTH}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.DATA_WIDTH}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.PAM_ORDER}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.PAM_ORDER}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.MEM_ADDR_WIDTH}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.MEM_ADDR_WIDTH}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.AD_CVER_WIDTH}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.AD_CVER_WIDTH}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.ADDR_MEM_WIDTH}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.ADDR_MEM_WIDTH}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.WIDTH_RESULT}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.WIDTH_RESULT}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.LENGTH_DATA}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.LENGTH_DATA}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.LENTGRH_M_SEQ}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.LENTGRH_M_SEQ}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.THRESHOLD}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.THRESHOLD}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.MEM_ADDR_WIDTH_DEMO}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.MEM_ADDR_WIDTH_DEMO}
+
+set _session_group_2 uut_demodulation
+gui_sg_create "$_session_group_2"
+set uut_demodulation "$_session_group_2"
+
+gui_sg_addsignal -group "$_session_group_2" { tb_senter_syn.uut_receiver.uut_demodulation.rec_pilot_r tb_senter_syn.uut_receiver.uut_demodulation.pam_data_0 tb_senter_syn.uut_receiver.uut_demodulation.pam_data_1 tb_senter_syn.uut_receiver.uut_demodulation.pam_data_2 tb_senter_syn.uut_receiver.uut_demodulation.pam_data_3 tb_senter_syn.uut_receiver.uut_demodulation.pam_data_4 tb_senter_syn.uut_receiver.uut_demodulation.pam_data_5 tb_senter_syn.uut_receiver.uut_demodulation.m_axi_tdata tb_senter_syn.uut_receiver.uut_demodulation.pam_data_6 tb_senter_syn.uut_receiver.uut_demodulation.pam_data_7 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_10 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_11 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_12 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_13 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_14 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_15 tb_senter_syn.uut_receiver.uut_demodulation.addr_pilot_w tb_senter_syn.uut_receiver.uut_demodulation.test_data tb_senter_syn.uut_receiver.uut_demodulation.addr_pilot tb_senter_syn.uut_receiver.uut_demodulation.m_axi_tkeep tb_senter_syn.uut_receiver.uut_demodulation.m_axi_tready tb_senter_syn.uut_receiver.uut_demodulation.WIDTH_AXI_DATA tb_senter_syn.uut_receiver.uut_demodulation.clk tb_senter_syn.uut_receiver.uut_demodulation.cmp_result tb_senter_syn.uut_receiver.uut_demodulation.IDLE tb_senter_syn.uut_receiver.uut_demodulation.cnt_rec_data tb_senter_syn.uut_receiver.uut_demodulation.WIDTH_AXI_KEEP tb_senter_syn.uut_receiver.uut_demodulation.syn_demod_ready tb_senter_syn.uut_receiver.uut_demodulation.syn_demod_valid_r tb_senter_syn.uut_receiver.uut_demodulation.pilot_mem tb_senter_syn.uut_receiver.uut_demodulation.m_axi_tvalid_r tb_senter_syn.uut_receiver.uut_demodulation.i tb_senter_syn.uut_receiver.uut_demodulation.rst_n tb_senter_syn.uut_receiver.uut_demodulation.flag_S0_over tb_senter_syn.uut_receiver.uut_demodulation.LENGTH_DATA tb_senter_syn.uut_receiver.uut_demodulation.cur_state tb_senter_syn.uut_receiver.uut_demodulation.flag_IDLE_over tb_senter_syn.uut_receiver.uut_demodulation.syn_demod_data_signed tb_senter_syn.uut_receiver.uut_demodulation.cnt_rec_pam tb_senter_syn.uut_receiver.uut_demodulation.PAM_ORDER tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_0 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_1 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_2 tb_senter_syn.uut_receiver.uut_demodulation.nxt_state tb_senter_syn.uut_receiver.uut_demodulation.m_axi_tvalid tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_3 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_4 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_5 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_6 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_7 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_8 tb_senter_syn.uut_receiver.uut_demodulation.S0 tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_9 tb_senter_syn.uut_receiver.uut_demodulation.S1 tb_senter_syn.uut_receiver.uut_demodulation.WIDTH_ADDR_REC_DATA tb_senter_syn.uut_receiver.uut_demodulation.div_enable tb_senter_syn.uut_receiver.uut_demodulation.AD_CVER_WIDTH tb_senter_syn.uut_receiver.uut_demodulation.div_pilot tb_senter_syn.uut_receiver.uut_demodulation.syn_demod_valid tb_senter_syn.uut_receiver.uut_demodulation.cmp_result_r tb_senter_syn.uut_receiver.uut_demodulation.rec_pilot_rr tb_senter_syn.uut_receiver.uut_demodulation.cnt_rec_pam_r tb_senter_syn.uut_receiver.uut_demodulation.m_axi_tlast tb_senter_syn.uut_receiver.uut_demodulation.m_axi_tlast_r tb_senter_syn.uut_receiver.uut_demodulation.LEGTHN_PILOT tb_senter_syn.uut_receiver.uut_demodulation.flag_S1_over tb_senter_syn.uut_receiver.uut_demodulation.syn_demod_data }
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.WIDTH_AXI_DATA}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.WIDTH_AXI_DATA}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.IDLE}
+gui_set_radix -radix {unsigned} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.IDLE}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.WIDTH_AXI_KEEP}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.WIDTH_AXI_KEEP}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.i}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.i}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.LENGTH_DATA}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.LENGTH_DATA}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.PAM_ORDER}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.PAM_ORDER}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.S0}
+gui_set_radix -radix {unsigned} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.S0}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.S1}
+gui_set_radix -radix {unsigned} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.S1}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.WIDTH_ADDR_REC_DATA}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.WIDTH_ADDR_REC_DATA}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.AD_CVER_WIDTH}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.AD_CVER_WIDTH}
+gui_set_radix -radix {decimal} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.LEGTHN_PILOT}
+gui_set_radix -radix {twosComplement} -signals {Sim:tb_senter_syn.uut_receiver.uut_demodulation.LEGTHN_PILOT}
+
+# Global: Highlighting
+
+# Global: Stack
+gui_change_stack_mode -mode list
+
+# Post database loading setting...
+
+# Save global setting...
+
+# Wave/List view global setting
+gui_cov_show_value -switch false
+
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {
+    if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {
+        gui_close_window -window $__top
+    }
+}
+gui_set_loading_session_type noSession
+# DVE View/pane content session: 
+
+
+# Hier 'Hier.1'
+gui_show_window -window ${Hier.1}
+gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+gui_list_set_filter -id ${Hier.1} -text {*}
+gui_change_design -id ${Hier.1} -design Sim
+catch {gui_list_expand -id ${Hier.1} tb_senter_syn}
+catch {gui_list_expand -id ${Hier.1} tb_senter_syn.uut_receiver}
+catch {gui_list_select -id ${Hier.1} {tb_senter_syn.uut_receiver.uut_demodulation}}
+gui_view_scroll -id ${Hier.1} -vertical -set 0
+gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Data 'Data.1'
+gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Data.1} -text {*}
+gui_list_show_data -id ${Data.1} {tb_senter_syn.uut_receiver.uut_demodulation}
+gui_show_window -window ${Data.1}
+catch { gui_list_select -id ${Data.1} {tb_senter_syn.uut_receiver.uut_demodulation.syn_demod_data }}
+gui_view_scroll -id ${Data.1} -vertical -set 0
+gui_view_scroll -id ${Data.1} -horizontal -set 0
+gui_view_scroll -id ${Hier.1} -vertical -set 0
+gui_view_scroll -id ${Hier.1} -horizontal -set 0
+
+# Source 'Source.1'
+gui_src_value_annotate -id ${Source.1} -switch false
+gui_set_env TOGGLE::VALUEANNOTATE 0
+gui_open_source -id ${Source.1}  -replace -active tb_senter_syn /home/eda/feifan/vlc_plat/PAM/Senter_Receiver/sim/../tb/tb_senter_receiver.v
+gui_view_scroll -id ${Source.1} -vertical -set 342
+gui_src_set_reusable -id ${Source.1}
+
+# View 'Wave.1'
+gui_wv_sync -id ${Wave.1} -switch false
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+gui_list_set_height -id Wave -height 25
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+gui_list_create_group_when_add -wave -disable
+gui_wv_zoom_timerange -id ${Wave.1} 0 358
+gui_list_add_group -id ${Wave.1} -after {New Group} {uut_demodulation}
+gui_seek_criteria -id ${Wave.1} {Any Edge}
+
+
+
+gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+gui_list_set_height -id Wave -height $origWaveHeight
+if {$origGroupCreationState} {
+	gui_list_create_group_when_add -wave -enable
+}
+if { $groupExD } {
+ gui_msg_report -code DVWW028
+}
+gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+gui_list_set_filter -id ${Wave.1} -text {*}
+gui_list_set_insertion_bar  -id ${Wave.1} -group uut_demodulation  -position in
+
+gui_view_scroll -id ${Wave.1} -vertical -set 750
+gui_show_grid -id ${Wave.1} -enable false
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} {
+	gui_set_active_window -window ${TopLevel.1}
+	gui_set_active_window -window ${Source.1}
+	gui_set_active_window -window ${HSPane.1}
+}
+if {[gui_exist_window -window ${TopLevel.2}]} {
+	gui_set_active_window -window ${TopLevel.2}
+	gui_set_active_window -window ${Wave.1}
+}
+#</Session>
+

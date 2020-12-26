@@ -1,0 +1,10 @@
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver_pilot/rtl/add_head_frame.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver_pilot/rtl/channel_sim.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver_pilot/rtl/demodulation.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver_pilot/rtl/divider.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver_pilot/rtl/divider_cell.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver_pilot/rtl/pam_map.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver_pilot/rtl/receiver.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver_pilot/rtl/senter.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver_pilot/rtl/syn.v
+/home/eda/feifan/vlc_plat/PAM/Senter_Receiver_pilot/tb/tb_senter_receiver.v

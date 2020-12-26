@@ -1,0 +1,56 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /home/eda/feifan/vlc_plat/PAM/Senter/Bit_Align/sim/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp8MYfQM
+synUtils::sendTool -active {_icl_start_rpc -version "O-2018.09-SP2_Full64" -sync_file /tmp/vcs_dve_rpc.eda.4140}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.eda.4140}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {tb_pam_map.uut_pam_map.AD_CVER_WIDTH tb_pam_map.uut_pam_map.DATA_WIDTH tb_pam_map.uut_pam_map.IDLE tb_pam_map.uut_pam_map.MEM_ADDR_WIDTH tb_pam_map.uut_pam_map.MEM_DEPTH tb_pam_map.uut_pam_map.M_AXIS_tdata tb_pam_map.uut_pam_map.M_AXIS_tkeep tb_pam_map.uut_pam_map.M_AXIS_tlast tb_pam_map.uut_pam_map.M_AXIS_tready tb_pam_map.uut_pam_map.M_AXIS_tready_r tb_pam_map.uut_pam_map.M_AXIS_tvalid tb_pam_map.uut_pam_map.M_out_pam_data tb_pam_map.uut_pam_map.M_out_ready tb_pam_map.uut_pam_map.M_out_valid tb_pam_map.uut_pam_map.M_out_valid_r tb_pam_map.uut_pam_map.PAM_ORDER tb_pam_map.uut_pam_map.S0 tb_pam_map.uut_pam_map.S1 tb_pam_map.uut_pam_map.arst_n tb_pam_map.uut_pam_map.clk tb_pam_map.uut_pam_map.cnt_stored_data tb_pam_map.uut_pam_map.detect_data_0 tb_pam_map.uut_pam_map.detect_data_1 tb_pam_map.uut_pam_map.i tb_pam_map.uut_pam_map.mem tb_pam_map.uut_pam_map.pam_data_0 tb_pam_map.uut_pam_map.pam_data_1 tb_pam_map.uut_pam_map.rec_addr tb_pam_map.uut_pam_map.rec_cur_state tb_pam_map.uut_pam_map.rec_flag_IDLE_over tb_pam_map.uut_pam_map.rec_flag_S0_over tb_pam_map.uut_pam_map.rec_flag_S1_over tb_pam_map.uut_pam_map.rec_nxt_state tb_pam_map.uut_pam_map.rec_valid tb_pam_map.uut_pam_map.sent_addr tb_pam_map.uut_pam_map.sent_addr_w tb_pam_map.uut_pam_map.sent_cur_state tb_pam_map.uut_pam_map.sent_flag_IDLE_over tb_pam_map.uut_pam_map.sent_flag_S0_over tb_pam_map.uut_pam_map.sent_flag_S1_over tb_pam_map.uut_pam_map.sent_nxt_state tb_pam_map.uut_pam_map.sent_valid } -aggregates  -fid VPD0
+synopsys::run -relative 100000.000000ps
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+synopsys::run -relative 100000.000000ps
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+synopsys::run -relative 100000.000000ps
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+synopsys::run -relative 100000.000000ps
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+synopsys::run -relative 100000.000000ps
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

@@ -1,0 +1,156 @@
+{
+    "stat": {
+        "ru_self_end": {
+            "ru_utime_sec": 0.152,
+            "ru_minflt": 9844,
+            "ru_stime_sec": 0.032000000000000001,
+            "ru_maxrss_kb": 121588,
+            "ru_majflt": 0,
+            "ru_nivcsw": 5,
+            "ru_nvcsw": 22
+        },
+        "peak_mem_kb": 269988,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_minflt": 3991,
+            "ru_stime_sec": 0.0080000000000000002,
+            "ru_maxrss_kb": 25044,
+            "ru_majflt": 0,
+            "ru_nivcsw": 9,
+            "ru_nvcsw": 18
+        },
+        "cpu_cycles_end": 17046909562507
+    },
+    "Modules": {
+        "...MASTER...": {
+            "start_perf": [
+                0.22338390350341797,
+                0.087999999999999995,
+                0.02,
+                256392,
+                269988,
+                1608429796.440089,
+                17046699433113
+            ],
+            "nMops": 0,
+            "end_perf": [
+                0.22663593292236328,
+                0.087999999999999995,
+                0.024,
+                258196,
+                269988,
+                17046708586979,
+                0,
+                0
+            ],
+            "child_modules": {
+                "tb_senter_syn": 1
+            },
+            "nQuads": 0,
+            "nRouts": 5
+        },
+        "tb_senter_syn": {
+            "start_perf": [
+                0.22670984268188477,
+                0.087999999999999995,
+                0.024,
+                258196,
+                269988,
+                1608429796.4434149,
+                17046708782421
+            ],
+            "child_modules": {},
+            "significant_routs": [
+                [
+                    26,
+                    "R_VCSgd_b1GDW_1a",
+                    8849763,
+                    9680,
+                    2058
+                ],
+                [
+                    70,
+                    "R_VCSgd_b1GDW_46",
+                    4498606,
+                    3786,
+                    785
+                ],
+                [
+                    81,
+                    "R_VCSgd_b1GDW_51",
+                    4540794,
+                    4335,
+                    883
+                ],
+                [
+                    175,
+                    "R_VCSgd_b1GDW_af",
+                    5736072,
+                    5719,
+                    1151
+                ],
+                [
+                    244,
+                    "R_VCSgd_b1GDW_f4",
+                    3958207,
+                    3408,
+                    609
+                ],
+                [
+                    279,
+                    "R_VCSgd_b1GDW_117",
+                    3633110,
+                    2705,
+                    914
+                ]
+            ],
+            "end_perf": [
+                0.29474091529846191,
+                0.152,
+                0.028000000000000001,
+                266508,
+                269988,
+                17046899914299,
+                8589934593,
+                0
+            ],
+            "nMops": 16847,
+            "Compiled": "Yes",
+            "Compiled Times": 16,
+            "nQuads": 5923,
+            "nRouts": 468
+        }
+    },
+    "CompUnits": {
+        "b1GDW_d": {
+            "mod": "tb_senter_syn",
+            "checksum": 0,
+            "out": "b1GDW_d.o",
+            "bytes": 133608,
+            "archive": "archive.15/_13142_archive_1.a",
+            "mode": 4,
+            "text": 85535
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.15/_13142_archive_1.a",
+            "objects": [
+                [
+                    "b1GDW_d.o",
+                    133608
+                ],
+                [
+                    "amcQwB.o",
+                    98682
+                ]
+            ],
+            "size": 232290
+        }
+    ]
+}
